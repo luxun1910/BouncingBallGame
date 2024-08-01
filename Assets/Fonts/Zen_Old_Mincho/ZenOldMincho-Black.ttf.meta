@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: ed914346cadda794eb3c716bc172fd1c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Zen Old Mincho
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 41f9f07127daffb4aaf9bf52917e1173, type: 3}
+  - {fileID: 12800000, guid: e0a572959d27e1244941cce67a54eca7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
