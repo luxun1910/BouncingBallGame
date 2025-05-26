@@ -64,7 +64,6 @@ public class BallController : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody>();
         myRigidbody.velocity = new Vector3(0f, -1 * speed, 0f);
         myTransform = transform;
-
     }
 
     // Update is called once per frame

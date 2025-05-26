@@ -33,7 +33,6 @@ public class LineController : MonoBehaviour
     /// </summary>
     private Vector3 touchPos;
 
-
     void Start()
     {
 
@@ -46,7 +45,6 @@ public class LineController : MonoBehaviour
 
     void drawLine()
     {
-
         if (Input.GetMouseButtonDown(0))
         {
             touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
