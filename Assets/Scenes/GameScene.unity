@@ -275,6 +275,7 @@ MonoBehaviour:
   scoreText: {fileID: 744746140}
   bouncing: {fileID: 429197872}
   getSlowDown: {fileID: 429197873}
+  getSpeedUp: {fileID: 429197873}
 --- !u!82 &429197872
 AudioSource:
   m_ObjectHideFlags: 0

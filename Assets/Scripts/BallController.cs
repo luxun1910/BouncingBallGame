@@ -53,6 +53,11 @@ public class BallController : MonoBehaviour
     /// </summary>
     public AudioSource getSlowDown;
 
+    /// <summary>
+    /// スピードアップアイテムを取得した時の音
+    /// </summary>
+    public AudioSource getSpeedUp;
+
     // Start is called before the first frame update
     void Start()
     {
