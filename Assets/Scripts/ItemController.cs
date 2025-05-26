@@ -3,16 +3,31 @@ using System;
 using System.Linq;
 using System.Collections;
 
+/// <summary>
+/// 各種アイテムコントローラー
+/// </summary>
 public class ItemController : MonoBehaviour
 {
     private float dt;
 
+    /// <summary>
+    /// アイテム生成確率
+    /// </summary>
     private float itemInstantiatePercentage;
 
+    /// <summary>
+    /// スローダウンアイテムのプレハブ
+    /// </summary>
     public GameObject slowDownItemPrefab;
 
+    /// <summary>
+    /// スピードアップアイテムのプレハブ
+    /// </summary>
     public GameObject speedUpItemPrefab;
 
+    /// <summary>
+    /// ミサイルのプレハブ
+    /// </summary>
     public GameObject missilePrefab;
 
     // Start is called before the first frame update
@@ -80,6 +95,10 @@ public class ItemController : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// アイテム消滅のコルーチン
+    /// </summary>
+    /// <param name="obj">消滅するアイテムのオブジェクト</param>
     private IEnumerator DestroyMethod(GameObject obj)
     {
         for (var i = 0; i < 85; i++)

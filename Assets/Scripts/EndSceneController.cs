@@ -8,10 +8,19 @@ using UnityEngine.SocialPlatforms;
 using GooglePlayGames.BasicApi;
 using System;
 
+/// <summary>
+/// ゲームオーバーシーンのコントローラー
+/// </summary>
 public class EndSceneController : MonoBehaviour
 {
+    /// <summary>
+    /// 最終スコアテキスト
+    /// </summary>
     public Text finalScoreText;
 
+    /// <summary>
+    /// インタースティシャル広告
+    /// </summary>
     public InterstitialAd InterstitialAd;
 
     // Start is called before the first frame update
@@ -34,6 +43,10 @@ public class EndSceneController : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// 認証を処理する
+    /// </summary>
+    /// <param name="status">認証ステータス</param>
     internal void ProcessAuthentication(SignInStatus status)
     {
         if (status == SignInStatus.Success)
@@ -63,6 +76,9 @@ public class EndSceneController : MonoBehaviour
         GlobalVariants.screenOrientation = Screen.orientation;
     }
 
+    /// <summary>
+    /// ゲームを続ける
+    /// </summary>
     public void ContinuGame()
     {
         InterstitialAd.SceneToJump = GlobalVariants.SceneNames.GameScene;
@@ -70,6 +86,9 @@ public class EndSceneController : MonoBehaviour
         InterstitialAd.ShowAd();
     }
 
+    /// <summary>
+    /// ゲームを終了する
+    /// </summary>
     public void EndGame()
     {
         InterstitialAd.SceneToJump = GlobalVariants.SceneNames.StartScene;

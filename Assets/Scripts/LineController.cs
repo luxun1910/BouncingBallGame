@@ -1,16 +1,36 @@
 using System.Collections;
 using UnityEngine;
 
+/// <summary>
+/// ラインコントローラー
+/// </summary>
 public class LineController : MonoBehaviour
 {
+    /// <summary>
+    /// ラインのプレハブ
+    /// </summary>
     public GameObject linePrefab;
+
+    /// <summary>
+    /// 予測ラインのプレハブ
+    /// </summary>
     public GameObject predictionLinePrefab;
 
+    /// <summary>
+    /// ラインの長さ
+    /// </summary>
     public float lineLength = 0.2f;
+
+    /// <summary>
+    /// ラインの幅
+    /// </summary>
     public float lineWidth = 0.1f;
 
     private Vector3 predictionTouchPos;
 
+    /// <summary>
+    /// タッチ位置
+    /// </summary>
     private Vector3 touchPos;
 
 
