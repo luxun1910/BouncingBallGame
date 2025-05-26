@@ -7,7 +7,7 @@ public class CreditSceneController : MonoBehaviour
 {
     public void JumpToTitleScene()
     {
-        SceneManager.LoadScene("StartScene");
+        SceneManager.LoadScene(GlobalVariants.SceneNames.StartScene);
     }
 
     public void JumpToPrivacyPolicy()

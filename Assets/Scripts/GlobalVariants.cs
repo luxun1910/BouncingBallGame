@@ -1,20 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class GlobalVariants : MonoBehaviour
+/// <summary>
+/// グローバル変数
+/// </summary>
+public static class GlobalVariants
 {
-    public static ScreenOrientation screenOrientation;
-
-    // Start is called before the first frame update
-    void Start()
+    /// <summary>
+    /// シーン名
+    /// </summary>
+    public static class SceneNames
     {
-        
+        public const string StartScene = "StartScene";
+        public const string GameScene = "GameScene";
+        public const string CreditScene = "CreditScene";
+        public const string EndScene = "EndScene";
     }
 
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// タグ名
+    /// </summary>
+    public static class Tags
     {
-        
+        public const string Ball = "Ball";
+        public const string Line = "Line";
+        public const string SpeedUpItem = "SpeedUpItem";
+        public const string SlowDownItem = "SlowDownItem";
+        public const string PredictionLine = "PredictionLine";
     }
 }

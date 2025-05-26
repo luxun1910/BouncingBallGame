@@ -27,9 +27,8 @@ public class ItemController : MonoBehaviour
         itemInstantiatePercentage = Time.time * 8;
         //Debug.Log(itemInstantiatePercentage);
 
-
-        // 画面内にアイテムが２個以上あったら生成しない
-        if(GameObject.FindGameObjectsWithTag("SlowDownItem").Count() + GameObject.FindGameObjectsWithTag("SpeedUpItem").Count() >= 2)
+        // 画面内にアイテムが最大数以上あったら生成しない
+        if (GameObject.FindGameObjectsWithTag(GlobalVariants.Tags.SlowDownItem).Count() + GameObject.FindGameObjectsWithTag(GlobalVariants.Tags.SpeedUpItem).Count() >= MAX_ITEMS)
         {
             return;
         }

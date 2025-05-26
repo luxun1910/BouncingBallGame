@@ -33,14 +33,11 @@ public class StartSceneController : MonoBehaviour
 
     public void JumpToCreditScene()
     {
-        SceneManager.LoadScene("CreditScene");
+        SceneManager.LoadScene(GlobalVariants.SceneNames.CreditScene);
     }
 
     public void JumpToGameScene()
     {
-        GlobalVariants.screenOrientation = Screen.orientation;
-
-        SceneManager.LoadScene("GameScene");
-
+        SceneManager.LoadScene(GlobalVariants.SceneNames.GameScene);
     }
 }

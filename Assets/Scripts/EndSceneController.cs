@@ -65,14 +65,14 @@ public class EndSceneController : MonoBehaviour
 
     public void ContinuGame()
     {
-        InterstitialAd.SceneToJump = "GameScene";
+        InterstitialAd.SceneToJump = GlobalVariants.SceneNames.GameScene;
         InterstitialAd.LoadAd();
         InterstitialAd.ShowAd();
     }
 
     public void EndGame()
     {
-        InterstitialAd.SceneToJump = "StartScene";
+        InterstitialAd.SceneToJump = GlobalVariants.SceneNames.StartScene;
         InterstitialAd.LoadAd();
         InterstitialAd.ShowAd();
         /*
