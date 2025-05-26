@@ -50,7 +50,8 @@ public class EndSceneController : MonoBehaviour
             PlayGamesPlatform.Instance.ShowLeaderboardUI(GPGSIds.leaderboard_bouncing_ball_game_ranking);
             Social.ShowLeaderboardUI();
 
-            Social.ReportScore((int)BallController.score, GPGSIds.leaderboard_bouncing_ball_game_ranking, (bool success) => {
+            Social.ReportScore((int)BallController.score, GPGSIds.leaderboard_bouncing_ball_game_ranking, (bool success) =>
+            {
                 // handle success or failure
             });
         }
