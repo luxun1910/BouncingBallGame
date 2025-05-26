@@ -23,9 +23,7 @@ public class EndSceneController : MonoBehaviour
     {
         finalScoreText.text = BallController.score.ToString();
 
-        Screen.orientation = ScreenOrientation.AutoRotation;
-
-        // Game Center�p����
+        // iOSならGame Centerを使用する
 #if UNITY_IOS
         //iOS�݂̂Ŏ��s�������������L�q
 #endif
@@ -68,7 +66,7 @@ public class EndSceneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GlobalVariants.screenOrientation = Screen.orientation;
+
     }
 
     /// <summary>

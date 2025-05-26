@@ -36,7 +36,7 @@ public class LineController : MonoBehaviour
 
     void Start()
     {
-        Screen.orientation = GlobalVariants.screenOrientation;
+
     }
 
     void Update()
