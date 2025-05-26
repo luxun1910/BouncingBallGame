@@ -25,10 +25,10 @@ public class EndSceneController : MonoBehaviour
 
         // iOSならGame Centerを使用する
 #if UNITY_IOS
-        //iOS�݂̂Ŏ��s�������������L�q
+
 #endif
 
-        // Google Play Game�p����
+        // AndroidならGoogle Play Gameを使用する
 #if UNITY_ANDROID
         PlayGamesPlatform.Activate();
         PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
